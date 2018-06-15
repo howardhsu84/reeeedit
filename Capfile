@@ -1,6 +1,7 @@
 # Load DSL and set up stages
 require "capistrano/setup"
-set :stage, :production
+
+set :rvm_ruby, '2.5.1-p57'
 
 
 # Include default deployment tasks
