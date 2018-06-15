@@ -4,7 +4,7 @@ lock "~> 3.11.0"
 
 set :application, 'deploy-example'
 set :repo_url, 'git@github.com:howardhsu84/reeeedit.git'
-
+Rake::Task["deploy:set_linked_dirs"].clear_actions
 
 
 
