@@ -40,13 +40,21 @@ gem 'simple_form', '~> 4.0', '>= 4.0.1'
 gem 'record_tag_helper', '~> 1.0'
 
 gem 'capistrano3-nginx', '~> 2.0'
-gem 'capistrano'
-
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
 gem 'capistrano-rails', :group => :development
 gem 'capistrano-passenger', :group => :development
+
+
+
+
+
+group :development do
+  gem 'capistrano', '~> 3.10', require: false
+end
+
+
 group :development do
   
   gem 'capistrano-secrets-yml', '~> 1.0.0'

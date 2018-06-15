@@ -1,3 +1,8 @@
+server '192.168.0.79', user: 'deploy', roles: %w{app web db}
+set :deploy_to, '/home/deploy/staging'
+
+
+
 # server-based syntax
 # ======================
 # Defines a single server with a list of roles and multiple properties.
@@ -59,5 +64,3 @@
 #     auth_methods: %w(publickey password)
 #     # password: "please use keys"
 #   }
-server '192.168.0.79', user: 'deploy', roles: %w{app web db}
-set :deploy_to, '/home/deploy/staging'
